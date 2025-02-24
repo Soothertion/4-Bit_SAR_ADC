@@ -1,0 +1,42 @@
+* NGSPICE file created from NComp.ext - technology: sky130A
+
+.subckt sky130_fd_pr__pfet_01v8_lvt_GWB8VV a_n258_n400# w_n396_n619# a_n200_n497#
++ a_200_n400#
+X0 a_200_n400# a_n200_n497# a_n258_n400# w_n396_n619# sky130_fd_pr__pfet_01v8_lvt ad=1.16 pd=8.58 as=1.16 ps=8.58 w=4 l=2
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_lvt_VWWV9N a_n29_n400# a_429_n400# a_n429_n488# a_29_n488#
++ a_n589_n574# a_n487_n400#
+X0 a_n29_n400# a_n429_n488# a_n487_n400# a_n589_n574# sky130_fd_pr__nfet_01v8_lvt ad=0.58 pd=4.29 as=1.16 ps=8.58 w=4 l=2
+X1 a_429_n400# a_29_n488# a_n29_n400# a_n589_n574# sky130_fd_pr__nfet_01v8_lvt ad=1.16 pd=8.58 as=0.58 ps=4.29 w=4 l=2
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_lvt_TZF6Y6 w_n246_n269# a_n108_n50# a_50_n50# a_n50_n147#
+X0 a_50_n50# a_n50_n147# a_n108_n50# w_n246_n269# sky130_fd_pr__pfet_01v8_lvt ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=0.5
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_lvt_PVEEJN a_n108_n180# a_n50_n268# a_n210_n354# a_50_n180#
+X0 a_50_n180# a_n50_n268# a_n108_n180# a_n210_n354# sky130_fd_pr__nfet_01v8_lvt ad=0.522 pd=4.18 as=0.522 ps=4.18 w=1.8 l=0.5
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_lvt_FMZK9W a_400_n200# a_n458_n200# a_n400_n288# a_n560_n374#
+X0 a_400_n200# a_n400_n288# a_n458_n200# a_n560_n374# sky130_fd_pr__nfet_01v8_lvt ad=0.58 pd=4.58 as=0.58 ps=4.58 w=2 l=4
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_lvt_3VA8VM w_n296_n619# a_n100_n497# a_100_n400# a_n158_n400#
+X0 a_100_n400# a_n100_n497# a_n158_n400# w_n296_n619# sky130_fd_pr__pfet_01v8_lvt ad=1.16 pd=8.58 as=1.16 ps=8.58 w=4 l=1
+.ends
+
+.subckt NComp VPWR Vref Vin Vcomp_n VGND
+XXM34 m1_n27_n2833# VPWR m1_735_n1694# VPWR sky130_fd_pr__pfet_01v8_lvt_GWB8VV
+XXM36 m1_3877_n2744# VGND m1_n27_n2833# m1_n27_n2833# VGND VGND sky130_fd_pr__nfet_01v8_lvt_VWWV9N
+XXM35 m1_n27_n2833# VGND m1_n27_n2833# m1_n27_n2833# VGND VGND sky130_fd_pr__nfet_01v8_lvt_VWWV9N
+XXM37 VPWR VPWR Vcomp_n m1_3877_n2744# sky130_fd_pr__pfet_01v8_lvt_TZF6Y6
+XXM38 VGND m1_3877_n2744# VGND Vcomp_n sky130_fd_pr__nfet_01v8_lvt_PVEEJN
+XXM29 VGND m1_735_n1694# Vref VGND sky130_fd_pr__nfet_01v8_lvt_FMZK9W
+XXM30 m1_3654_n1446# VGND Vin VGND sky130_fd_pr__nfet_01v8_lvt_FMZK9W
+XXM31 VPWR m1_735_n1694# VPWR m1_735_n1694# sky130_fd_pr__pfet_01v8_lvt_3VA8VM
+XXM32 VPWR m1_3654_n1446# m1_3654_n1446# VPWR sky130_fd_pr__pfet_01v8_lvt_3VA8VM
+XXM33 VPWR VPWR m1_3654_n1446# m1_3877_n2744# sky130_fd_pr__pfet_01v8_lvt_GWB8VV
+.ends
+

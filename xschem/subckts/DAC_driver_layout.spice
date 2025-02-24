@@ -1,0 +1,31 @@
+* NGSPICE file created from DAC_driver.ext - technology: sky130A
+
+.subckt sky130_fd_pr__nfet_01v8_lvt_QGMAL3 a_100_n200# a_n158_n200# a_n100_n288# a_n260_n374#
+X0 a_100_n200# a_n100_n288# a_n158_n200# a_n260_n374# sky130_fd_pr__nfet_01v8_lvt ad=0.58 pd=4.58 as=0.58 ps=4.58 w=2 l=1
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_lvt_3VC8VM w_n296_n419# a_n100_n297# a_100_n200# a_n158_n200#
+X0 a_100_n200# a_n100_n297# a_n158_n200# w_n296_n419# sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.58 as=0.58 ps=4.58 w=2 l=1
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_lvt_56BWKP a_108_n288# a_50_n200# a_n208_n288# a_n108_n200# a_n368_n374# a_n266_n200# a_n50_n288# a_208_n200#
+X0 a_n108_n200# a_n208_n288# a_n266_n200# a_n368_n374# sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.29 as=0.58 ps=4.58 w=2 l=0.5
+X1 a_208_n200# a_108_n288# a_50_n200# a_n368_n374# sky130_fd_pr__nfet_01v8_lvt ad=0.58 pd=4.58 as=0.29 ps=2.29 w=2 l=0.5
+X2 a_50_n200# a_n50_n288# a_n108_n200# a_n368_n374# sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.29 as=0.29 ps=2.29 w=2 l=0.5
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_lvt_X33VY6 a_n50_n297# a_50_n200# w_n562_n419# a_n108_n200# a_n266_n200# a_n424_n200# a_108_n297# a_n208_n297# a_266_n297# a_208_n200# a_n366_n297# a_366_n200#
+X0 a_n108_n200# a_n208_n297# a_n266_n200# w_n562_n419# sky130_fd_pr__pfet_01v8_lvt ad=0.29 pd=2.29 as=0.29 ps=2.29 w=2 l=0.5
+X1 a_208_n200# a_108_n297# a_50_n200# w_n562_n419# sky130_fd_pr__pfet_01v8_lvt ad=0.29 pd=2.29 as=0.29 ps=2.29 w=2 l=0.5
+X2 a_n266_n200# a_n366_n297# a_n424_n200# w_n562_n419# sky130_fd_pr__pfet_01v8_lvt ad=0.29 pd=2.29 as=0.58 ps=4.58 w=2 l=0.5
+X3 a_366_n200# a_266_n297# a_208_n200# w_n562_n419# sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.58 as=0.29 ps=2.29 w=2 l=0.5
+X4 a_50_n200# a_n50_n297# a_n108_n200# w_n562_n419# sky130_fd_pr__pfet_01v8_lvt ad=0.29 pd=2.29 as=0.29 ps=2.29 w=2 l=0.5
+.ends
+
+.subckt DAC_driver VPWR Dn_d Dn VGND
+XXM27 m1_1217_n721# VGND Dn VGND sky130_fd_pr__nfet_01v8_lvt_QGMAL3
+XXM28 VPWR Dn m1_1217_n721# VPWR sky130_fd_pr__pfet_01v8_lvt_3VC8VM
+XXM19 m1_1217_n721# VGND m1_1217_n721# Dn_d VGND VGND m1_1217_n721# Dn_d sky130_fd_pr__nfet_01v8_lvt_56BWKP
+XXM20 m1_1217_n721# Dn_d VPWR VPWR Dn_d VPWR m1_1217_n721# m1_1217_n721# m1_1217_n721# VPWR m1_1217_n721# Dn_d sky130_fd_pr__pfet_01v8_lvt_X33VY6
+.ends
+

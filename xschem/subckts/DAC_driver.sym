@@ -1,0 +1,27 @@
+v {xschem version=3.4.5 file_version=1.2
+}
+G {}
+K {type=primitive
+format="@name @pinlist @symname"
+template="name=x1"
+}
+V {}
+S {}
+E {}
+L 4 -30 -30 -30 30 {}
+L 4 30 -30 30 30 {}
+L 4 0 -50 0 -30 {}
+L 4 30 0 50 0 {}
+L 4 -50 0 -30 0 {}
+L 4 0 30 0 50 {}
+L 4 -30 -30 30 -30 {}
+L 4 -30 30 30 30 {}
+B 5 -2.5 -52.5 2.5 -47.5 {name=VPWR sig_type=std_logic dir=in}
+B 5 47.5 -2.5 52.5 2.5 {name=Dn_d sig_type=std_logic dir=out}
+B 5 -52.5 -2.5 -47.5 2.5 {name=Dn sig_type=std_logic dir=in}
+B 5 -2.5 47.5 2.5 52.5 {name=VGND sig_type=std_logic dir=in}
+T {@symname} 37 -36 0 0 0.3 0.3 {}
+T {VPWR} 5 -44 0 0 0.2 0.2 {}
+T {Dn_d} 65 6 0 1 0.2 0.2 {}
+T {Dn} -55 6 0 0 0.2 0.2 {}
+T {VGND} 5 44 2 1 0.2 0.2 {}

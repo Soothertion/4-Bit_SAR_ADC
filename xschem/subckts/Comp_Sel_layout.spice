@@ -1,0 +1,25 @@
+* NGSPICE file created from Comp_Sel.ext - technology: sky130A
+
+.subckt sky130_fd_pr__pfet_01v8_lvt_3VA8VV w_n296_n619# a_n100_n497# a_100_n400# a_n158_n400#
+X0 a_100_n400# a_n100_n497# a_n158_n400# w_n296_n619# sky130_fd_pr__pfet_01v8_lvt ad=1.16 pd=8.58 as=1.16 ps=8.58 w=4 l=1
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_lvt_AHMAL2 a_n260_n574# a_100_n400# a_n158_n400# a_n100_n488#
+X0 a_100_n400# a_n100_n488# a_n158_n400# a_n260_n574# sky130_fd_pr__nfet_01v8_lvt ad=1.16 pd=8.58 as=1.16 ps=8.58 w=4 l=1
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_lvt_3VR9VM w_n296_n319# a_n100_n197# a_100_n100# a_n158_n100#
+X0 a_100_n100# a_n100_n197# a_n158_n100# w_n296_n319# sky130_fd_pr__pfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=1
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_lvt_69TQ3K a_n260_n274# a_100_n100# a_n158_n100# a_n100_n188#
+X0 a_100_n100# a_n100_n188# a_n158_n100# a_n260_n274# sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=1
+.ends
+
+.subckt Comp_Sel VPWR Vcomp_p D3 Vcomp Vcomp_n VGND
+XXM1 VPWR D3 m1_1424_n523# Vcomp_p sky130_fd_pr__pfet_01v8_lvt_3VA8VV
+XXM2 VGND Vcomp_n m1_1424_n523# D3 sky130_fd_pr__nfet_01v8_lvt_AHMAL2
+XXM3 VPWR m1_1424_n523# Vcomp VPWR sky130_fd_pr__pfet_01v8_lvt_3VR9VM
+XXM4 VGND Vcomp VGND m1_1424_n523# sky130_fd_pr__nfet_01v8_lvt_69TQ3K
+.ends
+

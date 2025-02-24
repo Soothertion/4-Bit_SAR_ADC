@@ -1,0 +1,15 @@
+** sch_path: /home/ttuser/Desktop/PComp.sch
+.subckt PComp VPWR Vref Vin Vcomp_p VGND
+*.PININFO Vcomp_p:O Vref:I Vin:I VPWR:I VGND:I
+XM1 net4 net4 VGND VGND sky130_fd_pr__nfet_01v8_lvt L=4 W=4 nf=1 m=1
+XM3 net3 net3 VGND VGND sky130_fd_pr__nfet_01v8_lvt L=4 W=4 nf=1 m=1
+XM9 net4 Vin VPWR VPWR sky130_fd_pr__pfet_01v8_lvt L=2 W=4 nf=1 m=1
+XM2 net3 Vref VPWR VPWR sky130_fd_pr__pfet_01v8_lvt L=2 W=4 nf=1 m=1
+XM4 net1 net1 VPWR VPWR sky130_fd_pr__pfet_01v8_lvt L=2 W=8 nf=2 m=1
+XM5 net2 net1 VPWR VPWR sky130_fd_pr__pfet_01v8_lvt L=2 W=8 nf=2 m=1
+XM6 net2 net4 VGND VGND sky130_fd_pr__nfet_01v8_lvt L=4 W=2 nf=1 m=1
+XM7 net1 net3 VGND VGND sky130_fd_pr__nfet_01v8_lvt L=4 W=2 nf=1 m=1
+XM8 Vcomp_p net2 VPWR VPWR sky130_fd_pr__pfet_01v8_lvt L=0.5 W=0.5 nf=1 m=1
+XM10 Vcomp_p net2 VGND VGND sky130_fd_pr__nfet_01v8_lvt L=0.5 W=0.61 nf=1 m=1
+.ends
+.end

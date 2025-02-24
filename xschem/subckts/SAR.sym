@@ -1,0 +1,48 @@
+v {xschem version=3.4.5 file_version=1.2
+}
+G {}
+K {type=primitive
+format="@name @pinlist @symname"
+template="name=x1"
+}
+V {}
+S {}
+E {}
+L 4 50 -80 50 -60 {}
+L 4 70 40 70 60 {}
+L 4 130 -50 150 -50 {}
+L 4 -50 -30 -30 -30 {}
+L 4 30 40 30 60 {}
+L 4 -50 -10 -30 -10 {}
+L 4 -50 10 -30 10 {}
+L 4 130 -10 150 -10 {}
+L 4 130 10 150 10 {}
+L 4 130 -30 150 -30 {}
+L 4 130 30 150 30 {}
+L 4 130 -60 130 40 {}
+L 4 -30 -60 130 -60 {}
+L 4 -30 -60 -30 40 {}
+L 4 -30 40 130 40 {}
+B 5 47.5 -82.5 52.5 -77.5 {name=VPWR sig_type=std_logic dir=in}
+B 5 67.5 57.5 72.5 62.5 {name=VGND sig_type=std_logic dir=in}
+B 5 147.5 -52.5 152.5 -47.5 {name=EOC dir=out}
+B 5 -52.5 -32.5 -47.5 -27.5 {name=CLK sig_type=std_logic dir=in}
+B 5 27.5 57.5 32.5 62.5 {name=GND sig_type=std_logic dir=in}
+B 5 -52.5 -12.5 -47.5 -7.5 {name=NRST sig_type=std_logic dir=in}
+B 5 -52.5 7.5 -47.5 12.5 {name=Vcomp sig_type=std_logic dir=in}
+B 5 147.5 -12.5 152.5 -7.5 {name=D2 sig_type=std_logic dir=out}
+B 5 147.5 7.5 152.5 12.5 {name=D1 sig_type=std_logic dir=out}
+B 5 147.5 -32.5 152.5 -27.5 {name=D3 sig_type=std_logic dir=out}
+B 5 147.5 27.5 152.5 32.5 {name=D0 sig_type=std_logic dir=out}
+T {@symname} 38.5 -16 0 0 0.3 0.3 {}
+T {VPWR} 85 -66 2 0 0.2 0.2 {}
+T {VGND} 85 46 0 0 0.2 0.2 {}
+T {EOC} 125 -54 0 1 0.2 0.2 {}
+T {CLK} -25 -34 0 0 0.2 0.2 {}
+T {GND} 35 46 0 0 0.2 0.2 {}
+T {NRST} -25 -14 0 0 0.2 0.2 {}
+T {Vcomp} -25 6 0 0 0.2 0.2 {}
+T {D2} 125 -14 0 1 0.2 0.2 {}
+T {D1} 125 6 0 1 0.2 0.2 {}
+T {D3} 125 -34 0 1 0.2 0.2 {}
+T {D0} 125 26 0 1 0.2 0.2 {}

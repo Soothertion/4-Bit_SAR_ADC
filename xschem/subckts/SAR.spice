@@ -1,0 +1,20 @@
+** sch_path: /home/ttuser/Desktop/SAR.sch
+.subckt SAR VPWR VGND EOC CLK GND NRST Vcomp D2 D1 D3 D0
+*.PININFO NRST:I CLK:I EOC:O Vcomp:I D0:O D1:O D2:O D3:O GND:I VPWR:I VGND:I
+x3 CLK GND NRST VGND VGND VPWR VPWR net1 net6 sky130_fd_sc_hd__dfsbp_1
+x4 CLK net1 NRST VGND VGND VPWR VPWR net2 net7 sky130_fd_sc_hd__dfrbp_1
+x1 CLK net2 NRST VGND VGND VPWR VPWR net4 net8 sky130_fd_sc_hd__dfrbp_1
+x6 D2 Vcomp NRST net6 VGND VGND VPWR VPWR D3 net11 sky130_fd_sc_hd__dfbbp_1
+x7 D1 Vcomp NRST net7 VGND VGND VPWR VPWR D2 net12 sky130_fd_sc_hd__dfbbp_1
+x8 D0 Vcomp NRST net8 VGND VGND VPWR VPWR D1 net13 sky130_fd_sc_hd__dfbbp_1
+x2 CLK net4 NRST VGND VGND VPWR VPWR net3 net9 sky130_fd_sc_hd__dfrbp_1
+x5 CLK net3 NRST VGND VGND VPWR VPWR EOC net10 sky130_fd_sc_hd__dfrbp_1
+x9 net5 Vcomp NRST net9 VGND VGND VPWR VPWR D0 net14 sky130_fd_sc_hd__dfbbp_1
+x10 GND GND NRST net10 VGND VGND VPWR VPWR net5 net15 sky130_fd_sc_hd__dfbbp_1
+* noconn #net11
+* noconn #net12
+* noconn #net13
+* noconn #net14
+* noconn #net15
+.ends
+.end

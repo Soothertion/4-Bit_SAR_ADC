@@ -1,0 +1,33 @@
+* NGSPICE file created from DAC.ext - technology: sky130A
+
+.subckt sky130_fd_pr__res_high_po_0p35_AT4384 a_n165_n1746# a_n35_1184# a_n35_n1616#
+X0 a_n35_1184# a_n35_n1616# a_n165_n1746# sky130_fd_pr__res_high_po_0p35 l=12
+.ends
+
+.subckt sky130_fd_pr__res_high_po_0p35_Z689S7 a_n35_464# a_n165_n1026# a_n35_n896#
+X0 a_n35_464# a_n35_n896# a_n165_n1026# sky130_fd_pr__res_high_po_0p35 l=4.8
+.ends
+
+.subckt sky130_fd_pr__res_high_po_0p35_V3ZUAZ a_n35_n1436# a_n35_1004# a_n165_n1566#
+X0 a_n35_1004# a_n35_n1436# a_n165_n1566# sky130_fd_pr__res_high_po_0p35 l=10.2
+.ends
+
+.subckt sky130_fd_pr__res_high_po_0p35_GHF3PF a_n35_964# a_n165_n1526# a_n35_n1396#
+X0 a_n35_964# a_n35_n1396# a_n165_n1526# sky130_fd_pr__res_high_po_0p35 l=9.8
+.ends
+
+.subckt sky130_fd_pr__res_high_po_0p35_FFK5MY a_n35_n1416# a_n35_984# a_n165_n1546#
+X0 a_n35_984# a_n35_n1416# a_n165_n1546# sky130_fd_pr__res_high_po_0p35 l=10
+.ends
+
+.subckt DAC Vdac D0 D2 D3 D1 VGND
+XXR1 VGND m1_n1237_780# VGND sky130_fd_pr__res_high_po_0p35_AT4384
+XXR2 m1_n436_2902# VGND m1_n838_2902# sky130_fd_pr__res_high_po_0p35_Z689S7
+XXR3 m1_n436_2902# VGND Vdac sky130_fd_pr__res_high_po_0p35_Z689S7
+XXR4 D0 m1_n1237_780# VGND sky130_fd_pr__res_high_po_0p35_V3ZUAZ
+XXR5 m1_n838_2902# VGND D1 sky130_fd_pr__res_high_po_0p35_GHF3PF
+XXR6 m1_n436_2902# VGND D2 sky130_fd_pr__res_high_po_0p35_GHF3PF
+XXR7 D3 Vdac VGND sky130_fd_pr__res_high_po_0p35_FFK5MY
+XXR9 m1_n838_2902# VGND m1_n1237_780# sky130_fd_pr__res_high_po_0p35_Z689S7
+.ends
+

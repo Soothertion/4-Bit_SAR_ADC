@@ -1,0 +1,33 @@
+v {xschem version=3.4.5 file_version=1.2
+}
+G {}
+K {type=primitive
+format="@name @pinlist @symname"
+template="name=x1"
+}
+V {}
+S {}
+E {}
+L 4 60 -30 80 -30 {}
+L 4 -80 -70 -80 -50 {}
+L 4 0 -70 0 -50 {}
+L 4 40 -70 40 -50 {}
+L 4 -40 -70 -40 -50 {}
+L 4 -120 -30 -100 -30 {}
+L 4 -100 -50 60 -50 {}
+L 4 -100 -50 -100 -10 {}
+L 4 -100 -10 60 -10 {}
+L 4 60 -50 60 -10 {}
+B 5 77.5 -32.5 82.5 -27.5 {name=Vdac sig_type=std_logic dir=out}
+B 5 -82.5 -72.5 -77.5 -67.5 {name=D0 sig_type=std_logic dir=in}
+B 5 -2.5 -72.5 2.5 -67.5 {name=D2 sig_type=std_logic dir=in}
+B 5 37.5 -72.5 42.5 -67.5 {name=D3 sig_type=std_logic dir=in}
+B 5 -42.5 -72.5 -37.5 -67.5 {name=D1 sig_type=std_logic dir=in}
+B 5 -122.5 -32.5 -117.5 -27.5 {name=VGND sig_type=std_logic dir=in}
+T {@symname} -41.5 -36 0 0 0.3 0.3 {}
+T {Vdac} 95 -24 0 1 0.2 0.2 {}
+T {D0} -85 -56 2 0 0.2 0.2 {}
+T {D2} -5 -56 2 0 0.2 0.2 {}
+T {D3} 35 -56 2 0 0.2 0.2 {}
+T {D1} -45 -56 2 0 0.2 0.2 {}
+T {VGND} -135 -24 0 0 0.2 0.2 {}

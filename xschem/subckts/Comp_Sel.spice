@@ -1,0 +1,9 @@
+** sch_path: /home/ttuser/Desktop/Comp_Sel.sch
+.subckt Comp_Sel VPWR Vcomp_p D3 Vcomp Vcomp_n VGND
+*.PININFO Vcomp:O Vcomp_n:I Vcomp_p:I D3:I VGND:I VPWR:I
+XM3 Vcomp net1 VPWR VPWR sky130_fd_pr__pfet_01v8_lvt L=1 W=1 nf=1 m=1
+XM4 Vcomp net1 VGND VGND sky130_fd_pr__nfet_01v8_lvt L=1 W=1 nf=1 m=1
+XM2 net1 D3 Vcomp_n VGND sky130_fd_pr__nfet_01v8_lvt L=1 W=4 nf=1 m=1
+XM1 Vcomp_p D3 net1 VPWR sky130_fd_pr__pfet_01v8_lvt L=1 W=4 nf=1 m=1
+.ends
+.end

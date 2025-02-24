@@ -5,7 +5,7 @@ sections.
 
 You can also include images in this folder and reference them in the markdown. Each image must be less than
 512 kb in size, and the combined size of all images must be less than 1 MB.
---><!---
+-->
 
 ## Credits :
  Our special thanks to Dr. Shylashree N, Associate Professor, Department of Electronics and Communication, RVCE; Dr Geetha K S, Vice Principal, RVCE and Dr. Subramanya K N, Principal, RVCE for their constant support and encouragement which enabled us to design a tapeout for Tiny Tapout 10.
